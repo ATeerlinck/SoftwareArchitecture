@@ -11,9 +11,8 @@ public class Main {
         ArrayList<Talkable> zoo = new ArrayList<>();
 
         // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
+        Creator creator = new Creator(zoo);
+        creator.addNewAnimal(zoo);
         // End Lines to Replace
 
         for (Talkable thing : zoo) {
@@ -31,7 +30,7 @@ public class Main {
     }
 
     public static void printOut(Talkable p) {
-        System.out.println(p.getName() + " says=" + p.talk());
+        System.out.println(p.getName() + " says " + p.talk());
         outFile.fileWrite(p.getName() + " | " + p.talk());
     }
 }
