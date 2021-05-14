@@ -1,0 +1,9 @@
+out
+edu/wctc/
+*.html
+element-list
+*.css
+*.js
+index-files/
+resources/
+script-dir/
